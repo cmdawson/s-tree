@@ -29,6 +29,10 @@ public:
 
 private:
 
+    Node _sentinel;
+    unsigned _total;
+    bool _success;
+
     static inline bool NEW_NODE(const char c) { return c == '('; }
     static inline bool END_NODE(const char c) { return c == ')'; }
 
@@ -48,9 +52,6 @@ private:
 
 public:
 
-    Node _sentinel;
-    unsigned _total;
-    bool _success;
 
     STree(void) : _sentinel(0) { }
 
