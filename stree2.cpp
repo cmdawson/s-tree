@@ -73,7 +73,7 @@ public:
 	    if (isspace(c))
 		continue;
 
-	    if (isdigit(c))
+	    else if (isdigit(c))
 	    {
 		string digits(1,c);
 		while (isdigit(fs.peek()))
